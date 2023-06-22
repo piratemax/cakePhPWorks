@@ -28,6 +28,14 @@ use Cake\ORM\Locator\TableLocator;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
 
+use Psr\Http\Message\ServerRequestInterface;
+use Authentication\AuthenticationInterface;
+use Authentication\AuthenticationService;
+use Authentication\AuthenticationServiceInterface;
+use Authentication\Middleware\AuthenticationMiddleware;
+use Authentication\AuthenticationServiceProviderInterface;
+
+
 /**
  * Application setup class.
  *
